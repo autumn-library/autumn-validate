@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Отладка 1Script",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${file}",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "windows": {
+                "runtimeExecutable": "${env:OVM_OSCRIPTBIN}/oscript.bat"
+            },
+            "linux": {
+                "runtimeExecutable": "${env:OVM_OSCRIPTBIN}/oscript"
+            },
+            "osx": {
+                "runtimeExecutable": "${env:OVM_OSCRIPTBIN}/oscript"
+            },
+            "runtimeArgs": [],
+            "debugPort": 2801,
+            "protocol": "tcp"
+        }
+    ]
+}
